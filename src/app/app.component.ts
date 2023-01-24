@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'outputChallenge';
+  onomatopiaList : string[] = [];
+
+  onReceiveNewOnomatopia(event:string):void{
+
+    this.onomatopiaList.push(event)
+
+  }
 }
